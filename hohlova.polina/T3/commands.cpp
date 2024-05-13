@@ -286,7 +286,7 @@ void hohlova::processCommands(const std::vector<Polygon>& polygons)
             unsigned long long numVertices = std::stoull(option);
             for (const auto& polygon : polygons)
             {
-              int polygonVertices = polygon.points.size();
+              unsigned long long polygonVertices = polygon.points.size();
               if (polygonVertices == numVertices)
               {
                 count++;
